@@ -1,0 +1,13 @@
+{
+  "name": "revuze-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "concurrently \"cd RevuzeChallengeServer & dotnet run arg\" \"cd app & ng serve\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
