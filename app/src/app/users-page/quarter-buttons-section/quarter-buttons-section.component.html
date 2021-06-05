@@ -1,0 +1,5 @@
+<ng-container *ngFor="let quarter of this.quarters">
+    <button class="quarterButton" (click)="this.handleClick(quarter.startMonth, quarter.endMonth)">
+        {{quarter.name}}
+    </button>
+</ng-container>

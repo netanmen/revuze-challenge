@@ -1,0 +1,41 @@
+.root {
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 30px;
+
+    .pageContent {
+        max-height: calc(100vh - 120px);
+        flex: 1;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+
+        .userListSectionWrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            align-items: stretch;
+            margin-right: 20px;
+
+            .nameFilterWrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: stretch;
+
+                margin-bottom: 10px;
+
+                .nameFilterLabel {
+                    font-weight: 600;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

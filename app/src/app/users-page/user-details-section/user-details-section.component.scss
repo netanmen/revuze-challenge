@@ -1,0 +1,26 @@
+:host {
+    flex: 1;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+
+    .label {
+        text-decoration: underline;
+        font-weight: 600;
+        margin-bottom: 2.5px;
+    }
+    
+    .field:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .emptyMessage {
+        font-weight: 600;
+        font-size: 30px;
+        align-self: center;
+    }
+}

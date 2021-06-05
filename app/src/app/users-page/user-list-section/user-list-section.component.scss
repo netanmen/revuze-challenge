@@ -1,0 +1,13 @@
+:host {
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    .listItem {
+        text-align: left;
+        cursor: pointer;
+    }
+}

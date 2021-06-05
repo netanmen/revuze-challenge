@@ -1,0 +1,15 @@
+<div class="root">
+    <app-quarter-buttons-section (buttonClicked)="this.applyFilters($event)"></app-quarter-buttons-section>
+    <div class="pageContent">
+
+        <div class="userListSectionWrapper">
+            <div class="nameFilterWrapper">
+                <label class="nameFilterLabel" for="nameFilter">Name Filter:</label>
+                <input type="text" name="nameFilter" (input)="this.applyFilters({name: $event.target.value})">
+            </div>
+            <app-user-list-section [users]="this.usersService.userList$ | async" (itemClicked)="this.selectUser($event)">
+            </app-user-list-section>
+        </div>
+        <app-user-details-section [user]="this.usersService.currentUser$ | async"></app-user-details-section>
+    </div>
+</div>

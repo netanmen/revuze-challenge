@@ -1,0 +1,14 @@
+:host {
+    height: 40px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+
+    button {
+        width: 20%;
+        cursor: pointer;
+    }
+}

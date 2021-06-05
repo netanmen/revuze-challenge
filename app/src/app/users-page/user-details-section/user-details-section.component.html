@@ -1,0 +1,12 @@
+<span class="emptyMessage" *ngIf="!this.user">No user has been selected</span>
+
+<ng-container *ngIf="this.user">
+    <label class="label">Name: </label>
+    <span class="field">{{this.user.name}}</span>
+    <label class="label">Age: </label>
+    <span class="field">{{this.user.age}}</span>
+    <label class="label">Date: </label>
+    <span class="field">{{this.user.date}}</span>
+    <label class="label">Address: </label>
+    <span class="field">{{this.user.address}}</span>
+</ng-container>
